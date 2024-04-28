@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Figtree:ital,wght@0,300..900;1,300..900&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Big+Shoulders+Display:wght@100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cards {
+    display:flex;
+    flex-direction:row;
+    max-width:1500px;
+    height:600px;
+    margin:150px auto;
+}
+
+#cards h1, p {
+    margin-left:40px;
+    color:white;
+}
+
+#cards h1 {
+    margin-top:50px;
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    font-size:50px;
+}
+
+#cards p {
+    margin-top:40px;
+    margin-right:40px;
+    font-family:"Lexend Deca", sans-serif;
+    font-size:15px;
+}
+
+#card1 {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#card2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#card3 {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.image {
+    margin-left:40px;
+    margin-top:50px;
+}
+
+.button {
+    margin-left:40px;
+    margin-top:120px;
+    margin-bottom:50px;
+    width:200px;
+    padding:20px;
+    background-color:white;
+    border:3px solid white;
+    text-align:center;
+    border-radius:30px;
+    transition:1s;
+}
+
+#link1 {
+    text-decoration:none;
+    font-family:"Lexend Deca", sans-serif;
+    color:hsl(31, 77%, 52%);
+}
+
+#link2 {
+    text-decoration:none;
+    font-family:"Lexend Deca", sans-serif;
+    color:hsl(184, 100%, 22%);
+}
+
+#link3 {
+    text-decoration:none;
+    font-family:"Lexend Deca", sans-serif;
+    color:hsl(179, 100%, 13%)
+}
+
+
+
+.button:hover {
+    background-color:hsla(31, 77%, 52%, 0);
+    color:white;
+}
+
+@media(max-width:600px) {
+    #cards {
+        flex-direction:column;
+    }
+    #card1 {
+        border-top-right-radius:15px;
+        border-bottom-left-radius:0px;
+    }
+    #card3 {
+        border-top-right-radius:0px;
+        border-bottom-left-radius:15px;
+    }
+}
